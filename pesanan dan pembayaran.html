@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffee Corner - Pesan & Bayar Kopimu</title>
+    <link rel="stylesheet" href="pesanan dan pembayaran.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Coffee Corner</h1>
+        <p>Pesan Kopimu, Pilih Metode Pembayaran, dan Nikmati Secangkir Kenikmatan!</p>
+        <a href="percobaan home.html">
+            <button class="back-button">Back</button>
+        </a>     
+    </header>
+
+    <div class="container">
+    
+        <section>
+            <h2>Menu Kopi</h2>
+            <div class="menu-item">
+                <span class="name">Espresso</span>
+                <span class="price">Rp 25.000</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Americano</span>
+                <span class="price">Rp 30.000</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Latte</span>
+                <span class="price">Rp 35.000</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Cappuccino</span>
+                <span class="price">Rp 35.000</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Mocha</span>
+                <span class="price">Rp 40.000</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Flat White</span>
+                <span class="price">Rp 40.000</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Cold Brew</span>
+                <span class="price">Rp 35.000</span>
+            </div>
+            <div class="menu-item">
+                <span class="name">Affogato</span>
+                <span class="price">Rp 50.000</span>
+            </div>
+        </section>
+
+       
+        <section>
+            <h2>Pesan Kopimu</h2>
+            <form class="order-form" action="penutup pesanan.html" method="GET">
+                <label for="coffee-choice">Pilih Kopi:</label>
+                <select id="coffee-choice" name="coffee">
+                    <option value="espresso">Espresso</option>
+                    <option value="americano">Americano</option>
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="mocha">Mocha</option>
+                    <option value="flat-white">Flat White</option>
+                    <option value="macchiato">Cold Brew</option>
+                    <option value="affogato">Affogato</option>
+                </select>
+
+                <label for="address">Alamat Pengiriman:</label>
+                <input type="text" id="address" name="address" placeholder="Masukkan Alamat" required>
+
+                <label for="topping">Pilih Topping (Optional):</label>
+                <select id="topping" name="topping">
+                    <option value="none">Tidak Ada Topping</option>
+                    <option value="extra-shot">Extra Shot Espresso</option>
+                    <option value="whipped-cream">Whipped Cream</option>
+                    <option value="caramel-syrup">Caramel Syrup</option>
+                </select>
+
+                <h3>Pilih Metode Pembayaran:</h3>
+                <div class="payment-methods">
+                    <input type="radio" id="payment-credit-card" name="payment" value="credit-card">
+                    <label for="payment-credit-card">Kartu Kredit/Debit</label>
+
+                    <input type="radio" id="payment-ewallet" name="payment" value="ewallet">
+                    <label for="payment-ewallet">Dompet Digital (Gopay, OVO, DANA, dll)</label>
+
+                    <input type="radio" id="payment-bank-transfer" name="payment" value="bank-transfer">
+                    <label for="payment-bank-transfer">Transfer Bank</label>
+
+                    <input type="radio" id="payment-cash" name="payment" value="cash">
+                    <label for="payment-cash">Bayar Tunai (Cash on Delivery)</label>
+                </div>
+
+                <button type="submit">Pesan Sekarang</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
